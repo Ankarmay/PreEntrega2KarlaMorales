@@ -1,43 +1,35 @@
- @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
- }
- .coverbody {
-   width: 100%;
-   height: 100%;
-   
+}
+
+.coverbody {
    background-image: url(../sources/saranghaecover.jpg);
    background-size: cover;
    background-position: center;
    background-attachment: fixed;
- }
- .hero{
+}
+.hero{
 
     background-image: url("../sources/kdramacover.jpg");
     height: 100vh;
-   
- }
- .btn btn-primary{
-   background: rgb(rgb(85, 173, 97));
- }
- @media screen and (max-width: 480px) {
-   .card {
+}
+
+@media screen and (max-width: 480px) {
+.card {
       background-color: rgb(85, 173, 97)
 
-   }
- 
+}
 
- }
- @media screen and (max-width: 480px) {
-   .card-body {
+}
+@media screen and (max-width: 720px) {
+.card-body {
       background-color: rgb(191, 121, 194)
+}
 
-   }
- 
 
- }
-   
+}
