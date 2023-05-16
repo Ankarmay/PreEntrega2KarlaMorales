@@ -1,0 +1,15 @@
+header{
+    background-color: aquamarine;
+    display: flex;
+    gap: 10px;
+
+    .logo{
+        width: 100px;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+    
+}
+

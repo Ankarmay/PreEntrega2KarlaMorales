@@ -1,18 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
-}
+header{
+      background-color: aquamarine;
+      display: flex;
+      gap: 10px;
+  }
+  .logo{
+      width: 100px;
+  }
 
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Josefin Sans', sans-serif;
+  }
+
+.img {
+      flex: auto;
+}
 .coverbody {
    background-image: url(../sources/saranghaecover.jpg);
    background-size: cover;
    background-position: center;
    background-attachment: fixed;
 }
+
+.coverbody1{
+      background-color: #3EECAC;
+background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
+
+}
+ 
 .hero{
 
     background-image: url("../sources/kdramacover.jpg");
@@ -33,3 +52,52 @@
 
 
 }
+
+
+.card:hover{
+      width: 100%;
+      background-color: aquamarine;
+}
+
+.card1:hover{
+      animation-name: card1Movimiento;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out;
+
+}
+.mb-3:hover{
+      animation-name: mb-3Movimiento;
+      animation-duration: 6s;
+      animation-timing-function: ease-in-out;
+
+}
+
+@keyframes card1Movimiento {
+      from {
+            width: 300px;
+            background-color: aquamarine;
+      }
+      to{
+            width:100%;
+            background-color: thistle;
+      
+      }
+
+}
+col-md-4{
+      -ms-flex-align: center;
+}
+.col{
+      flex-direction:row;
+}
+
+
+.swing-in-top-fwd
+
+
+.cardn{
+      -webkit-animation:swing-in-top-fwd .5s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-fwd .5s cubic-bezier(.175,.885,.32,1.275) both;
+      animation-delay: 10s;
+}
+
+      @-webkit-keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}@keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}
