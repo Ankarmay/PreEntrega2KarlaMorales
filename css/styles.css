@@ -1,37 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
 header{
-      background-color: aquamarine;
-      display: flex;
-      gap: 10px;
-  }
-  .logo{
-      width: 100px;
-  }
+    background-color: aquamarine;
+    display: flex;
+    gap: 10px;
+}
+.logo{
+    width: 100px;
+}
 
 *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Josefin Sans', sans-serif;
-  }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: 'Josefin Sans', sans-serif;
+}
 
 .img {
-      flex: auto;
+flex: auto;
 }
+@charset "utf-8";
+*{
+box-sizing: border-box;
+}
+body {
+margin: 0;
+font-family: "Segoe UI",Arial,sans-serif;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #212529;
+text-align: left;
+background-color: #fff;
+}
+h2 {
+margin-top: 0;
+margin-bottom: .5rem;
+font-size: 2rem;
+font-weight: 500;
+line-height: 1.2;
+}
+.tarjetahor {
+max-width: 65vw;
+margin: 48px auto;
+display: block;
+border-radius: 10px;
+border: 1px solid rgb(227, 132, 132);
+overflow: hidden;
+}
+.contenido {
+display: flex;
+}
+@media (max-width: 1024px){
+.contenido{
+flex-direction: column;
+}
+.tarjetahor {
+    max-width: 95vw;
+}
+}
+.ladoIzq, .ladoDer {
+width: 100%;
+}
+.ladoDer img {
+width: 100%;
+height: 100%;
+border-style: none;
+}
+.ladoIzq {
+background: rgb(144, 191, 144);
+color: white;
+padding: 48px
+}
+.btn {
+display: inline-block;
+background: white;
+margin-right: 4px;
+padding: 14px;
+border-radius: 5px;
+margin-top: 18px;
+}
+a.btn{
+text-decoration: none;
+}
+a.btn:first-of-type {
+background: #5252b4;
+color: white;
+}
+a.btn:hover{
+opacity: 0.8;
+}
+
 .coverbody {
-   background-image: url(../sources/saranghaecover.jpg);
-   background-size: cover;
-   background-position: center;
-   background-attachment: fixed;
+background-image: url(../sources/saranghaecover.jpg);
+background-size: 100%;
+background-position: 100%;
+background-attachment: fixed;
 }
 
-.coverbody1{
-      background-color: #3EECAC;
-background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
-
-}
- 
 .hero{
 
     background-image: url("../sources/kdramacover.jpg");
@@ -60,44 +126,116 @@ background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
 }
 
 .card1:hover{
-      animation-name: card1Movimiento;
-      animation-duration: 3s;
-      animation-timing-function: ease-in-out;
+    animation-name: card1Movimiento;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
 
 }
 .mb-3:hover{
-      animation-name: mb-3Movimiento;
-      animation-duration: 6s;
-      animation-timing-function: ease-in-out;
+    animation-name: mb-3Movimiento;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
 
 }
 
 @keyframes card1Movimiento {
-      from {
+    from {
             width: 300px;
             background-color: aquamarine;
-      }
-      to{
+    }
+    to
+    {
             width:100%;
             background-color: thistle;
-      
-      }
+    }
 
 }
 col-md-4{
-      -ms-flex-align: center;
+    -ms-flex-align: center;
 }
 .col{
-      flex-direction:row;
+    flex-direction:row;
 }
 
 
 .swing-in-top-fwd
+.container-card{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+}
+.title-cards{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+}
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background:#fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.card img{
+    width: 100%;
+    height: 210px;
+}
+.card .contenido-card{
+    padding: 15px;
+    text-align: center;
+}
+.card .contenido-card h3{
+    margin-bottom: 15px;
+    color: #7a7a7a;
+}
+.card .contenido-card p{
+    line-height: 1.8;
+    color: #6a6a6a;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.card .contenido-card a{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+    background: #2fb4cc;
+    color: #fff;
+}
+.flex-container {
+    flex-wrap: wrap;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .container-card1{
+    flex-wrap: wrap;
+    }
+    .card1{
+    margin: 15px;
+}
+}
 
 
 .cardn{
-      -webkit-animation:swing-in-top-fwd .5s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-fwd .5s cubic-bezier(.175,.885,.32,1.275) both;
-      animation-delay: 10s;
+    -webkit-animation:swing-in-top-fwd .5s cubic-bezier(.175,.885,.32,1.275) both;animation:swing-in-top-fwd .5s cubic-bezier(.175,.885,.32,1.275) both;
+    animation-delay: 10s;
 }
-
-      @-webkit-keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}@keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}
+@-webkit-keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}@keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}
